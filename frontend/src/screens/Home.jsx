@@ -24,7 +24,7 @@ const Home = () => {
             <p className="mt-4 text-sm leading-relaxed md:text-lg lg:text-base max-w-lg">
               Empowering businesses with customized workforce solutions, we provide skilled professionals to optimize productivity, streamline operations, and drive success. Your trusted partner for sourcing, managing, and enhancing manpower across industries.
             </p>
-            <h1 className='text-5xl font-bold'>apprenticeship solutions</h1>
+            <h1 className='text-5xl font-bold'>Apprenticeship solutions</h1>
             <p className="mt-4 text-sm leading-relaxed md:text-lg lg:text-base max-w-lg">
             Apprenticeship Solutions is a platform that links learners with practical, industry-focused apprenticeship programs. We offer access to a range of opportunities across different sectors, allowing individuals to gain real-world experience and develop essential skills under expert mentorship. Perfect for those looking to kickstart or transition their careers, Apprenticeship Solutions simplifies the path to professional growth.
             </p>
