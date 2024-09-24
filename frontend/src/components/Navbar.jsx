@@ -1,9 +1,25 @@
-import React, { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 
 const Navbar = ({ onScrollToSection }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScrollOrNavigate = (section) => {
+    if (location.pathname === "/") {
+      // If on the home page, just scroll
+      onScrollToSection(section);
+    } else {
+      // If not on the home page, navigate to home first and then scroll
+      navigate("/");
+      setTimeout(() => {
+        onScrollToSection(section);
+      }, 100); // Delay to ensure the page has loaded before scrolling
+    }
+    setIsOpen(false); // Close mobile menu after click
+  };
 
   return (
     <nav className="bg-white shadow-lg w-full z-50 sticky top-0">
@@ -19,20 +35,14 @@ const Navbar = ({ onScrollToSection }) => {
               <NavLink to="/" className="text-gray-800 hover:text-orange-500 px-3 py-2 rounded-md text-lg font-medium">
                 Home
               </NavLink>
-              <button 
-                onClick={() => {
-                  onScrollToSection("about");
-                  setIsOpen(false);
-                }} 
+              <button
+                onClick={() => handleScrollOrNavigate("about")}
                 className="text-gray-800 hover:text-orange-500 px-3 py-2 rounded-md text-lg font-medium"
               >
                 About Us
               </button>
-              <button 
-                onClick={() => {
-                  onScrollToSection("services");
-                  setIsOpen(false);
-                }} 
+              <button
+                onClick={() => handleScrollOrNavigate("services")}
                 className="text-gray-800 hover:text-orange-500 px-3 py-2 rounded-md text-lg font-medium"
               >
                 Services
@@ -68,20 +78,14 @@ const Navbar = ({ onScrollToSection }) => {
             <NavLink to="/" className="block text-gray-800 hover:bg-gray-100 hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium">
               Home
             </NavLink>
-            <button 
-              onClick={() => {
-                onScrollToSection("about");
-                setIsOpen(false);
-              }} 
+            <button
+              onClick={() => handleScrollOrNavigate("about")}
               className="block text-gray-800 hover:bg-gray-100 hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium"
             >
               About Us
             </button>
-            <button 
-              onClick={() => {
-                onScrollToSection("services");
-                setIsOpen(false);
-              }} 
+            <button
+              onClick={() => handleScrollOrNavigate("services")}
               className="block text-gray-800 hover:bg-gray-100 hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium"
             >
               Services
