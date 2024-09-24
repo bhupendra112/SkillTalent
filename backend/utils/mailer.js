@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 const sendEmail = async(subject, name, designation, email, mobileNumber, message) => {
     const mailOptions = {
         from: process.env.EMAIL_USER, // Your email address
-        to: "bhupendragupta62586@gmail.com", // Recipient email
+        to: "mayurpanchal@skilltalent.co.in", // Recipient email
         subject, // Email subject
         text: `You have received a new query.\n\n
         Name: ${name}\n
