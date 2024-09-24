@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
 import Footer from "./components/Footer";
@@ -9,10 +9,9 @@ import About from "./screens/About";
 import Privacypolicy from "./screens/Privacypolicy";
 
 function App() {
-  // Create refs for each section
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
-  const servicesRef = useRef(null); // Updated ref to match "Services"
+  const servicesRef = useRef(null);
 
   // Scroll handler function
   const scrollToSection = (section) => {
@@ -52,7 +51,9 @@ function App() {
           }
         />
         <Route path="/contact" element={<Contact />} />
-        <Route path="//privacy-policy" element={<Privacypolicy />} />
+        <Route path="/privacy-policy" element={<Privacypolicy />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </Router>
