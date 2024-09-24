@@ -4,9 +4,9 @@ import {NavLink} from "react-router-dom"
 
 const Services = () => {
   return (
-    <section className="py-12">
+    <section className="py-8">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-semibold text-gray-800">Global Portfolio of Services</h2>
+        <h2 className="text-3xl font-semibold text-gray-800">Services</h2>
         <p className="mt-4 text-gray-600">
           From efficient recruitment and seamless payroll solutions to flexible staffing and robust workforce management, we cater to all your HR needs.
         </p>
