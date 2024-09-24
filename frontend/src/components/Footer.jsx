@@ -21,19 +21,19 @@ const Footer = () => {
           </p>
           <div className="flex space-x-4">
             {/* Social Media Icons */}
-            <NavLink to="#" className="text-gray-400 hover:text-white">
+            <NavLink to="https://www.facebook.com/" className="text-gray-400 hover:text-white">
               <FacebookIcon/>
             </NavLink>
-            <NavLink to="#" className="text-gray-400 hover:text-white">
+            <NavLink to="https://x.com/" className="text-gray-400 hover:text-white">
               <TwitterIcon/>
             </NavLink>
-            <NavLink to="#" className="text-gray-400 hover:text-white">
+            <NavLink to="https://linkedin.in/" className="text-gray-400 hover:text-white">
               <LinkedInIcon/>
             </NavLink>
-            <NavLink to="#" className="text-gray-400 hover:text-white">
+            <NavLink to="https://www.youtube.com/" className="text-gray-400 hover:text-white">
               <YouTubeIcon/>
             </NavLink>
-            <NavLink to="#" className="text-gray-400 hover:text-white">
+            <NavLink to="https://www.instagram.com/stss_pvt.ltd/" className="text-gray-400 hover:text-white">
               <InstagramIcon/>
             </NavLink>
           </div>
@@ -51,19 +51,24 @@ const Footer = () => {
             <li><NavLink to="/contact">IT Staffing</NavLink></li>
             <li><NavLink to="/contact">Search & Recruitment</NavLink></li>
             <li><NavLink to="/contact">Payroll</NavLink></li>
+            <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
+            <li><NavLink to="/services">Services</NavLink></li>
           </ul>
         </div>
 
         {/* Overview Section */}
         <div  className="space-x-2">
-          <h3 className="text-lg font-bold mb-3">Overview</h3>
+          <h3 className="text-lg font-bold mb-3">Quick Links</h3>
           <ul className="text-gray-400 space-y-2">
-            <li><NavLink to="/services">Services</NavLink></li>
+          <li><NavLink to="https://www.apprenticeshipindia.gov.in/">NAPS</NavLink></li>
+          <li><NavLink to="https://app.powerbi.com/view?r=eyJrIjoiM2U0ZTFjYTktNGJkNS00OWY0LWEwMGYtMjRhMTI2YmQzMWNiIiwidCI6IjcyNGI4ZWQxLTgxODMtNGNiOS1iNWIwLTFlZDY3YWZlYWNmMSIsImMiOjEwfQ%3D%3D">DBT</NavLink></li>
             {/* <li><NavLink to="/associate-zone">Associate Zone</NavLink></li> */}
-            <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
+            <li><NavLink to="/https://nats.education.gov.in/institutions.php">NATS</NavLink></li>
+
             {/* <li><NavLink to="/hrms-application-privacy-policy">HRMS Application Privacy Policy</NavLink></li> */}
           </ul>
         </div>
+
 
         {/* Contact Us Section */}
         <div  className="space-x-2">
