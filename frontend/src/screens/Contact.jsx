@@ -209,7 +209,7 @@ export default function Contact() {
               <Marker position={[22.739772, 75.910002]}> {/* Updated coordinates */}
                 <Popup>
                   Skill Talent & Staffing Solutions<br />
-                  Kanadia Rd, near Hanuman Mandir, Saket Nagar, Indore, Madhya Pradesh 452016
+                  Kanadia Rd, near Hanuman Mandir, Saket Nagar, Indore, Madhya Pradesh 452018
                 </Popup>
               </Marker>
             </MapContainer>
