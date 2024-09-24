@@ -82,7 +82,7 @@ const Footer = () => {
               <span className="material-icons">email</span> pithampurstss@skilltalent.co.in
             </li>
             <li>
-              <span className="material-icons">location_on</span> Kanadia Rd, near Hanuman mandir, Saket Nagar, Indore, Madhya Pradesh 452016
+              <span className="material-icons">location_on</span> Kanadia Rd, near Hanuman mandir, Saket Nagar, Indore, Madhya Pradesh 452018
             </li>
           </ul>
         </div>
