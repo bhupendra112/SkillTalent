@@ -32,13 +32,13 @@ const About = () => {
             {/* About Us Section */}
             <h2 className="text-orange-500 font-semibold text-xl mb-4">ABOUT US</h2>
             <h3 className="text-3xl font-bold text-gray-800 mb-6">
-              Manpower Solutions for Local 
+              Manpower Solutions
             </h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              We are the premier manpower solutions provider in India, offering staffing,
-              recruitment, payroll, onboarding, flexible/temporary/contract staffing, CXO hire,
-              RPO solutions, permanent recruitment, general staffing, staff augmentation, 
-              apprentice solutions, EOR and PEO services, managed services, and other value-added services. 
+              We are the premier manpower solutions provider in India,<b> apprenticeship solutions,</b> offering staffing,
+              recruitment, payroll, onboarding, flexible/temporary/contract staffing, CXO hire, salary offering,
+               permanent recruitment, general staffing, staff augmentation, 
+               EOR and PEO services, managed services, and other value-added services. 
               We have established ourselves as a reliable partner for businesses seeking comprehensive 
               workforce solutions. Our commitment to excellence is reflected in our structured processes, 
               cutting-edge technology, and a dedicated team that ensures seamless and efficient recruitment processes.
@@ -79,7 +79,7 @@ const About = () => {
             {/* Experience Section */}
             <div 
               style={{ backgroundImage: `url(${experience})` }} 
-              className="relative w-full bg-cover bg-center bg-no-repeat h-96"
+              className="relative w-full bg-cover bg-center bg-no-repeat h-40"
             >
               <div className="absolute bg-orange-500 bottom-0 bg-opacity-80 text-white p-6 flex flex-col items-center justify-end text-center">
                 <h4 className="text-4xl font-bold mb-2">{count}+</h4>
