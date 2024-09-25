@@ -89,7 +89,7 @@ export default function Contact() {
           <div className="absolute bg-gray-800 bg-opacity-60 text-white p-6 flex flex-col items-center justify-center text-center w-full h-full">
             <h1 className="text-5xl font-bold">Contact Us</h1>
             <div className='mt-4'>
-              <a className='hover:text-orange-500' href="/">Spectrum Talent Management </a>
+              <a className='hover:text-orange-500' href="/">Skill Talent Management </a>
               <span className='hover:text-orange-500'> / Company Profile</span>
             </div>
           </div>
