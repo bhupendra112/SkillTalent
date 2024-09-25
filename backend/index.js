@@ -5,7 +5,7 @@ const app = express();
 const bodyParser = require('body-parser')
 const contactRouter = require('./routes/Auth.js')
 require('dotenv').config(); // Add parentheses to load environment variables
-const port = process.env.PORT || 3000;
+const port = 3000;
 //const { sendEmail } = require('./utils/mailer.js');
 
 app.use(cors({
