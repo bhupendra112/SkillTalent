@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 
 // Create transporter for sending emails via Gmail
 const transporter = nodemailer.createTransport({
-    service: 'gmail', // Using Gmail as email service
+    service: 'gmail',
     auth: {
         user: process.env.EMAIL_USER, // Sender email address from .env
         pass: process.env.EMAIL_PASS, // Sender email password (App password for Gmail)
@@ -19,10 +19,10 @@ const transporter = nodemailer.createTransport({
  * @param {string} mobileNumber - Sender's mobile number
  * @param {string} message - Query or message content
  */
-const sendEmail = async(subject, name, designation, email, mobileNumber, message) => {
+const sendEmail = async (subject, name, designation, email, mobileNumber, message) => {
     const mailOptions = {
         from: process.env.EMAIL_USER, // Your email address
-        to: "mayurpanchal@skilltalent.co.in", // Recipient email
+        to: "ravinayak4982@gmail.com", // Recipient email
         subject, // Email subject
         text: `You have received a new query.\n\n
         Name: ${name}\n
@@ -41,5 +41,4 @@ const sendEmail = async(subject, name, designation, email, mobileNumber, message
     }
 };
 
-// Export the function directly
-module.exports = sendEmail;
+module.exports = sendEmail; // Export the function
