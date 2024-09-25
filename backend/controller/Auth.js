@@ -1,10 +1,13 @@
-const sendEmail = require('../utils/mailer.js'); // Import the function directly
+const sendEmail = require('../utils/mailer.js'); // Import the mailer function
 
-const contactUs = async(req, res) => {
+/**
+ * Handles contact form submissions.
+ */
+const contactUs = async (req, res) => {
     const { query, name, designation, email, mobileNumber, message } = req.body;
 
     // Validate that all fields are present
-    if (!name || !designation || !email || !mobileNumber || !message || !query) {
+    if (!query || !name || !designation || !email || !mobileNumber || !message) {
         return res.status(400).json({ error: 'All fields are required' });
     }
 
@@ -15,19 +18,13 @@ const contactUs = async(req, res) => {
     }
 
     try {
-        await sendEmail(
-            query, // Subject of the email
-            name, // Sender's name
-            designation, // Sender's designation
-            email, // Sender's email
-            mobileNumber, // Sender's mobile number
-            message // Message content
-        );
-        res.status(200).json({ message: 'message sent successfully!' });
+        // Send the email
+        await sendEmail(query, name, designation, email, mobileNumber, message);
+        res.status(200).json({ message: 'Message sent successfully!' });
     } catch (error) {
         console.error('Error sending email:', error);
         res.status(500).json({ error: 'Failed to send email' });
     }
 };
 
-module.exports = { contactUs }; // Ensure proper export
+module.exports = { contactUs }; // Export the function
