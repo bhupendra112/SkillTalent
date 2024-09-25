@@ -115,7 +115,7 @@ export default function Contact() {
                   <option value="Apprentice Solution (NAPS & NATS)">Apprentice Solution (NAPS & NATS)</option>
                   <option value="Recruitment Process Outsourcing">Recruitment Process Outsourcing</option>
                   <option value="General Staffing">General Staffing</option>
-                  <option value="Contract Staffing">ontract Staffing</option>
+                  <option value="Contract Staffing">Contract Staffing</option>
                   <option value="Training & Learning">Training & Learning</option>
                   <option value="IT Staffing">IT Staffing</option>
                   <option value="Search & Recruitment">Search & Recruitment</option>
@@ -191,7 +191,7 @@ export default function Contact() {
             <div className="bg-blue-900 text-white p-6 rounded-lg shadow-lg w-full md:w-1/3 text-center">
               <div className="text-3xl mb-2">✉️</div>
               <h3 className="text-xl font-bold">Email Address</h3>
-              <p> pithampurstss@skilltalent.co.in</p>
+              <p> pithampurstss@skilltalents.co.in</p>
             </div>
           </div>
 
