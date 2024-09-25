@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className="relative h-[35vh] w-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${home})`, height: "40rem" }}>
+        style={{ backgroundImage: `url(${home})`, height: "45rem" }}>
         {/* Overlay */}
         <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
 
