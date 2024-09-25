@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-gray-400 mt-10">
-        © Copyright Spectrum Talent Management Limited
+        © Copyright Skill Talent & Staffing Solutions
       </div>
     </footer>
   );
