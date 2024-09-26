@@ -63,7 +63,7 @@ const Footer = () => {
           <li><NavLink to="https://www.apprenticeshipindia.gov.in/">NAPS</NavLink></li>
           <li><NavLink to="https://app.powerbi.com/view?r=eyJrIjoiM2U0ZTFjYTktNGJkNS00OWY0LWEwMGYtMjRhMTI2YmQzMWNiIiwidCI6IjcyNGI4ZWQxLTgxODMtNGNiOS1iNWIwLTFlZDY3YWZlYWNmMSIsImMiOjEwfQ%3D%3D">DBT</NavLink></li>
             {/* <li><NavLink to="/associate-zone">Associate Zone</NavLink></li> */}
-            <li><NavLink to="/https://nats.education.gov.in/institutions.php">NATS</NavLink></li>
+            <li><NavLink to="https://nats.education.gov.in/institutions.php">NATS</NavLink></li>
 
             {/* <li><NavLink to="/hrms-application-privacy-policy">HRMS Application Privacy Policy</NavLink></li> */}
           </ul>
