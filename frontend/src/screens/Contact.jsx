@@ -191,7 +191,7 @@ export default function Contact() {
             <div className="bg-blue-900 text-white p-6 rounded-lg shadow-lg w-full md:w-1/3 text-center">
               <div className="text-3xl mb-2">✉️</div>
               <h3 className="text-xl font-bold">Email Address</h3>
-              <p> pithampurstss@skilltalents.co.in</p>
+              <p> pithampurstss@skilltalent.co.in</p>
             </div>
           </div>
 

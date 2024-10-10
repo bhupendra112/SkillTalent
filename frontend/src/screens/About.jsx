@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import experience from "../assets/experience.jpeg"; // Make sure this path is correct
-import certified from "../assets/NSDC-logo.png"
-import picture from "../assets/p1.avif"
+// import experience from "../assets/experience.jpeg"; // Make sure this path is correct
+
+import picture from "../assets/p1.avif";
 
 const About = () => {
   const [count, setCount] = useState(0);
