@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import experience from "../assets/experience.jpeg"; // Make sure this path is correct
 import certified from "../assets/NSDC-logo.png"
+import picture from "../assets/p1.avif"
 
 const About = () => {
   const [count, setCount] = useState(0);
@@ -45,7 +46,7 @@ const About = () => {
             </p>
 
             {/* Location Section */}
-            <h4 className="text-xl font-bold text-gray-800 mb-2">INDIA</h4>
+            {/* <h4 className="text-xl font-bold text-gray-800 mb-2">INDIA</h4> */}
             <p className="text-gray-600 leading-relaxed">
               At Skill Talent & Staffing Solutions®, we take pride in our extensive network , 
               allowing us to connect top-tier talent with organizations across industries. Our client-centric 
@@ -60,9 +61,12 @@ const About = () => {
             </button> */}
           </div>
 
-          {/* Right side: Badge and Certification */}
-          <div className="lg:w-1/4 space-y-8">
-            {/* Certification Badge */}
+           {/* Right side: Badge and Certification */}
+          <div className="lg:w-1/4 space-y-8 mt-10">
+
+
+          <img src={picture} alt="" />
+         {/*  Certification Badge 
             <div className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center text-center">
               <img 
                 src={certified}
@@ -76,7 +80,7 @@ const About = () => {
               </p>
             </div>
 
-            {/* Experience Section */}
+            Experience Section 
             <div 
               style={{ backgroundImage: `url(${experience})` }} 
               className="relative w-full bg-cover bg-center bg-no-repeat h-40"
@@ -85,7 +89,7 @@ const About = () => {
                 <h4 className="text-4xl font-bold mb-2">{count}+</h4>
                 <p className="text-lg font-semibold">Employees</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
