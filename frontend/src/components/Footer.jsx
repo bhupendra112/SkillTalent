@@ -79,7 +79,7 @@ const Footer = () => {
               <span className="material-icons">phone</span> +91-7049-736-538 , +91-9039-317-854
             </li>
             <li>
-              <span className="material-icons">email</span> pithampurstss@skilltalents.co.in
+              <span className="material-icons">email</span> pithampurstss@skilltalent.co.in
             </li>
             <li>
               <span className="material-icons">location_on</span> Kanadia Rd, near Hanuman mandir, Saket Nagar, Indore, Madhya Pradesh 452018
